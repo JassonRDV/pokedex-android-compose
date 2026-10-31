@@ -49,4 +49,4 @@ To request a debug build on Windows:
 
 ## Contact
 
-[Jasson Ramos on LinkedIn](https://www.linkedin.com/in/jasson-ramos-66b897340/)
+[Jasson Ramos on LinkedIn](https://www.linkedin.com/in/jassonramos/)
