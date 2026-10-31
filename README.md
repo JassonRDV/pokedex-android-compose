@@ -1,30 +1,52 @@
-<table align = "center" style = "border-collapse: collapse;">
-  <tr>
-    <td style = "border: none;"><img src="https://github.com/JassonRDV/pokedex_job_vacancy_test_result/blob/main/images/1.png" width="200" alt="Screenshot 1"></td>
-    <td style = "border: none;"><img src="https://github.com/JassonRDV/pokedex_job_vacancy_test_result/blob/main/images/2.png" width="200" alt="Screenshot 2"></td>
-    <td style = "border: none;"><img src="https://github.com/JassonRDV/pokedex_job_vacancy_test_result/blob/main/images/3.png" width="200" alt="Screenshot 3"></td>
-  </tr>
-</table>
+# Pokédex — Android App with Jetpack Compose
 
-# Pokedex Nativo Android
+A native Android Pokédex built with Kotlin and Jetpack Compose. It uses PokeAPI to load Pokémon information and displays a grid of entries with a detail view.
 
-**Features:**
-* ✅ Listing and details of Pokémon (names, images, types).
-* ✅ Intuitive and functional user interface.
+## Features in the source
 
-**Technologies:**
-<p align="left">
-  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android"/>
-  <img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin"/>
-  <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Jetpack Compose"/>
-  <img src="https://img.shields.io/badge/PokeAPI-FFCB05?style=for-the-badge&logo=pokeapi&logoColor=black" alt="PokeAPI"/>
+- A grid of Pokémon with their names, numbers, and images.
+- A detail view showing the selected Pokémon's name, sprite, and types.
+- Previous and next controls in the detail view.
+- PokeAPI integration through Retrofit.
+- ViewModel state and a repository layer.
+- Image loading with Coil and dependency injection with Hilt.
+
+## Screenshots
+
+<p>
+  <img src="images/1.png" width="200" alt="Pokédex screenshot 1">
+  <img src="images/2.png" width="200" alt="Pokédex screenshot 2">
+  <img src="images/3.png" width="200" alt="Pokédex screenshot 3">
 </p>
 
-**Skills:** Android development, Kotlin, API consumption, Jetpack Compose, MVVM, RetroFit and Repository pattern
+## Technology
 
-**Contact:**
-<p align="left">
-  <a href="https://www.linkedin.com/in/jasson-ramos-66b897340/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a> 
-</p>
+Kotlin, Jetpack Compose, Material 3, ViewModel, coroutines, Hilt, Retrofit, and Coil.
+
+## Getting started
+
+1. Clone this repository and open its root folder in Android Studio.
+2. Install Android SDK 35 and configure a Gradle JDK compatible with the project; the source targets Java 21.
+3. Sync the Gradle project.
+4. Select an emulator or device running Android 8.0 / API 26 or newer.
+5. Run the `app` configuration with internet access.
+
+The current PokeAPI service does not require an API key.
+
+To request a debug build on Windows:
+
+```powershell
+.\gradlew.bat assembleDebug
+```
+
+## Source guide
+
+- [PokemonListScreen.kt](app/src/main/java/com/example/pokedex/ui/screens/PokemonListScreen.kt): Pokémon grid.
+- [PokemonDetailScreen.kt](app/src/main/java/com/example/pokedex/ui/screens/PokemonDetailScreen.kt): selected entry and navigation controls.
+- [PokemonViewModel.kt](app/src/main/java/com/example/pokedex/viewmodel/PokemonViewModel.kt): UI state and data loading.
+- [PokeApiService.kt](app/src/main/java/com/example/pokedex/data/api/PokeApiService.kt): list and detail endpoints.
+- [PokemonRepository.kt](app/src/main/java/com/example/pokedex/data/repository/PokemonRepository.kt): API access layer.
+
+## Contact
+
+[Jasson Ramos on LinkedIn](https://www.linkedin.com/in/jasson-ramos-66b897340/)
